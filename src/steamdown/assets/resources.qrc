@@ -1,0 +1,7 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource prefix="/">
+        <file>steam_icon.png</file>
+        <file>down_arrow.png</file>
+    </qresource>
+</RCC> 

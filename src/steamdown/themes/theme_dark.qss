@@ -1,0 +1,212 @@
+QWidget {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    font-family: Segoe UI;
+    font-size: 14px;
+}
+
+QWidget#MainContent {
+    background-color: #1e1e1e;
+}
+
+QWidget#MainScreen, QWidget#SettingsScreen {
+    background-color: #1e1e1e;
+}
+
+/* Title Bar Styling */
+QWidget#TitleBar {
+    background-color: #252525;
+    border-bottom: 1px solid #444;
+    min-height: 2.5em;
+}
+
+QLabel#WindowTitle {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0.3em;
+}
+
+QPushButton#CloseButton {
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 0;
+    min-width: 2em;
+    transition: background-color 0.2s;
+}
+
+QPushButton#CloseButton:hover {
+    background-color: #c42b1c;
+}
+
+/* Speed Indicator */
+QFrame#SpeedFrame {
+    background-color: #252525;
+    border-radius: 0.2em;
+    margin: 0.3em 0;
+    min-height: 0.25em;
+    max-height: 0.25em;
+}
+
+QFrame#SpeedBar {
+    background-color: #4db8ff;
+    border-radius: 0.125em;
+}
+
+/* Status Label */
+QLabel#StatusLabel {
+    color: #ffffff;
+    font-size: 0.93em;
+    margin: 5px 0;
+    transition: color 0.3s;
+}
+
+/* Main UI Styling */
+QPushButton {
+    background-color: #2d2d2d;
+    border: 1px solid #444;
+    padding: 8px 12px;
+    border-radius: 0.4em;
+    min-width: 6em;
+    transition: all 0.2s;
+}
+
+QPushButton:hover {
+    background-color: #3a3a3a;
+    border-color: #555;
+    transform: translateY(-1px);
+}
+
+QPushButton:pressed {
+    background-color: #333333;
+    transform: translateY(1px);
+}
+
+QPushButton#AnimatedButton {
+    transition: all 0.3s;
+}
+
+QPushButton#AnimatedButton:hover {
+    background-color: #4db8ff;
+    border-color: #4db8ff;
+    color: #ffffff;
+}
+
+QPushButton#back-button {
+    background-color: transparent;
+    border: none;
+    border-radius: 0.5em;
+    padding: 0.4em;
+    transition: all 0.2s;
+    color: #ffffff;
+}
+
+QPushButton#back-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+QPushButton#back-button:pressed {
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translateX(-2px);
+}
+
+QLineEdit {
+    background-color: #2b2b2b;
+    border: 1px solid #444;
+    border-radius: 0.25em;
+    padding: 6px 8px;
+    transition: all 0.2s;
+    margin: 2px 0;
+}
+
+QLineEdit:focus {
+    border-color: #4db8ff;
+    background-color: #2f2f2f;
+}
+
+QLineEdit:hover {
+    border-color: #555;
+    background-color: #2d2d2d;
+}
+
+/* Title Label - Using high specificity and !important */
+QLabel[objectName="TitleLabel"] {
+    font-size: 48px !important;
+    font-weight: 800;
+    color: #4db8ff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    transition: color 0.3s;
+    letter-spacing: 0.05em;
+}
+
+QComboBox {
+    background-color: #2d2d2d;
+    border: 1px solid #444;
+    border-radius: 0.4em;
+    padding: 6px 8px;
+    min-width: 6em;
+    transition: all 0.2s;
+    margin: 2px 0;
+}
+
+QComboBox::down-arrow {
+    width: 0;
+    height: 0;
+    border: none;
+}
+
+QComboBox::drop-down {
+    width: 0;
+    border: none;
+}
+
+QComboBox:hover {
+    background-color: #3a3a3a;
+    border: 1px solid #555;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #2d2d2d;
+    border: 1px solid #444;
+    border-radius: 0.4em;
+    selection-background-color: #4db8ff;
+    selection-color: #ffffff;
+    padding: 0.25em;
+}
+
+QCheckBox {
+    spacing: 0.5em;
+    transition: all 0.2s;
+}
+
+QCheckBox:hover {
+    color: #4db8ff;
+}
+
+QCheckBox::indicator {
+    width: 1.125em;  /* 18px/14px base font */
+    height: 1.125em;
+    border: 1px solid #444;
+    border-radius: 0.25em;
+    background-color: #2b2b2b;
+    transition: all 0.2s;
+}
+
+QCheckBox::indicator:checked {
+    background-color: #4db8ff;
+    border-color: #4db8ff;
+}
+
+QCheckBox::indicator:hover {
+    border-color: #555;
+    background-color: #2d2d2d;
+}
+
+/* Transition Animations */
+.QStackedWidget {
+    transition: all 0.3s ease-in-out;
+}
