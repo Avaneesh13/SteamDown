@@ -149,11 +149,6 @@ Ideas for new features—especially for supporting other game launchers (e.g., E
 
 ---
 
-**Download:**  
-[SteamDown.exe](./SteamDown.exe)
-
----
-
 ## License
 
 MIT License – see [LICENSE](LICENSE) for details.
