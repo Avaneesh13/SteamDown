@@ -1,9 +1,7 @@
 from PySide6.QtWidgets import (QWidget, QVBoxLayout, QLabel, QPushButton, 
-                              QHBoxLayout, QStackedWidget, QFrame, QComboBox, QCheckBox)
-from PySide6.QtCore import Qt, QTimer, QPoint, QPropertyAnimation, QEasingCurve
-from PySide6.QtGui import QIcon, QColor
-from collections import deque
-import os
+                              QHBoxLayout, QStackedWidget, QComboBox, QCheckBox)
+from PySide6.QtCore import Qt, QTimer, QPoint
+from PySide6.QtGui import QIcon
 import time
 
 from .animated_labels import PulsingLabel, AnimatedLabel
@@ -83,6 +81,7 @@ class MainWindow(QWidget):
         
         title_label = QLabel("SteamDown")
         title_label.setObjectName("WindowTitle")
+        title_label.setStyleSheet("background: transparent;")
         title_layout.addWidget(title_label)
         
         # Settings/Back button
@@ -160,8 +159,8 @@ class MainWindow(QWidget):
         # Action selection
         self.action_combo = QComboBox()
         self.action_combo.setObjectName("ActionCombo")
-        self.action_combo.addItems(["Gracefully stop Steam", "Shutdown PC", "Sleep PC", "Hibernate PC", "Log off"])
-        self.action_combo.setCurrentText("Gracefully stop Steam")
+        self.action_combo.addItems(["Close Steam", "Shutdown PC", "Sleep PC", "Hibernate PC", "Log off"])
+        self.action_combo.setCurrentText("Close Steam")
         controls_layout.addWidget(self.action_combo)
         
         # Enable checkbox
