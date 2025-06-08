@@ -28,6 +28,16 @@ SteamDown is a utility that monitors Steam download activity. If there is no dow
 
 ---
 
+## Screenshots
+
+**Main Window**
+![Main Window](src\steamdown\assets\screenshots\main_window.png)
+
+**Settings Window**
+![Settings Window](src\steamdown\assets\screenshots\settings_window.png)
+
+---
+
 ## Getting Started
 
 ### 1. Run the App Directly
