@@ -1,137 +1,171 @@
 # SteamDown
 
-A Python-based Steam utility application with a modern graphical user interface.
+A modern, Python-based desktop utility for Steam users.
 
-## 🎯 Overview
+---
 
-SteamDown is a desktop application built with Python that provides utilities for Steam users. The application features a clean, modern interface with customizable themes and modular components.
+## What is SteamDown?
 
-## ✨ Features
+SteamDown is a utility that monitors Steam download activity. If there is no download activity for a user-defined amount of time, SteamDown will automatically perform your chosen action—such as stopping Steam, shutting down your PC, putting your PC to sleep, and more. This helps automate your system's behavior after downloads finish, saving power and time.
 
-- 🎨 **Customizable Themes**: Multiple theme options for personalized experience
-- 🖥️ **Modern GUI**: Clean and intuitive user interface
-- 📦 **Standalone Executable**: Pre-built executables available for easy installation
-- 🔧 **Modular Architecture**: Well-organized codebase with separate components
-- 🐍 **Python-based**: Built with Python 3.7.9 for reliability and maintainability
+### Key Features
+- Monitors Steam download activity and detects inactivity
+- Automatically performs actions after downloads finish (shutdown, sleep, stop Steam, and more)
+- User-configurable inactivity timer and action selection
+- Modern, intuitive GUI
+- Easy-to-use standalone executable
 
-## 🚀 Installation
+**Upcoming:**
+- Light & system theme mode
+- Bugfixes & performance improvements
+- Support for other game launchers (ideas welcome!)
 
-### Option 1: Download Pre-built Executable
-1. Go to the [Releases](../../releases) page
-2. Download the latest `SteamDown.exe` file
-3. Run the executable directly - no installation required!
+---
 
-### Option 2: Run from Source
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Avaneesh13/SteamDown.git
-   cd SteamDown
-   ```
+### For Developers
+- Modular, well-organized codebase
+- 100% Python (3.7.9+)
 
-2. Create and activate a virtual environment:
-   ```bash
-   python -m venv venv
-   # On Windows:
-   venv\Scripts\activate
-   # On macOS/Linux:
-   source venv/bin/activate
-   ```
+---
 
-3. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+## Getting Started
 
-4. Run the application:
-   ```bash
-   python main.py
-   ```
+### 1. Run the App Directly
+- Download the latest release from the [Releases](../../releases) page
+- Launch `SteamDown.exe` (no installation needed)
 
-## 🎮 Usage
+### 2. Build from Source
+- Clone the repo:
+  ```bash
+  git clone https://github.com/Avaneesh13/SteamDown.git
+  cd SteamDown
+  ```
+- Create a virtual environment:
+  ```bash
+  python -m venv venv
+  # Windows:
+  venv\Scripts\activate
+  # macOS/Linux:
+  source venv/bin/activate
+  ```
+- Install dependencies:
+  ```bash
+  pip install -r requirements.txt
+  ```
+- Run the app:
+  ```bash
+  python main.py
+  ```
 
-1. Launch the application by running `SteamDown.exe` or `python main.py`
-2. The main window will open with the default theme
-3. Navigate through the available features using the interface
-4. Customize the appearance by selecting different themes from the options
+### 3. Development & Debug Mode
+- To run in debug mode (if supported):
+  ```bash
+  python main_debug.py
+  ```
 
-## 🛠️ Development
+---
+
+## Usage
+- Launch the app and explore the main and settings window
+- More features coming soon!
+
+---
+
+## Development
 
 ### Prerequisites
 - Python 3.7.9 or higher
-- virtualenv package manager
-- Git
+- Preffered virtual environment manager (venv, virtualenv, etc.)
 
-### Setting up Development Environment
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Avaneesh13/SteamDown.git
-   cd SteamDown
-   ```
-
-2. Create virtual environment:
-   ```bash
-   python -m venv venv
-   venv\Scripts\activate  # Windows
-   # source venv/bin/activate  # macOS/Linux
-   ```
-
-3. Install development dependencies:
+### Setting Up for Development
+1. Clone the repo and set up a virtual environment (see above)
+2. Install dev dependencies:
    ```bash
    pip install -r requirements.txt
    ```
-
-4. Run in debug mode:
+3. Run in debug mode:
    ```bash
    python main_debug.py
    ```
 
 ### Code Structure
-- `src/steamdown/`: Main application package
-  - `components/`: UI components and windows
-  - `themes/`: Theme configurations
-  - `utils/`: Utility functions and helpers
-  - `assets/`: Static assets (images, icons, etc.)
+- `src/steamdown/` – Main app package
+  - `components/` – UI components
+  - `themes/` – Theme configs
+  - `utils/` – Utility functions
+  - `assets/` – Static assets (images/icons)
 
-## 🏗️ Building
-
-The project includes build scripts for creating standalone executables:
-## 📋 Requirements
-
-- **Python**: 3.7.9+
-- **Operating System**: Windows (primary), macOS and Linux (may require additional setup)
-- **Dependencies**: Listed in `requirements.txt`
-
-## 🤝 Contributing
-
-We welcome contributions! Here's how you can help:
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature-name`
-3. Make your changes and test thoroughly
-4. Commit with clear messages: `git commit -m "Add feature description"`
-5. Push to your fork: `git push origin feature-name`
-6. Submit a pull request
-
-### Development Guidelines
-- Follow PEP 8 style guidelines
-- Add tests for new features
-- Update documentation as needed
-- Ensure all builds passes before submitting
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE) - see the LICENSE file for details.
-
-## 🐛 Issues and Support
-
-If you encounter any issues or have questions:
-
-1. Create a new issue with:
-   - Clear description of the problem
-   - Steps to reproduce
-   - System information (OS, Python version)
-   - Screenshots if applicable
 ---
 
-**Note**: This project is not affiliated with Valve Corporation or Steam. Steam is a trademark of Valve Corporation.
+## Building
+
+To build SteamDown into a standalone executable (Windows):
+- Simply run the build script:
+  ```bash
+  python build.py
+  ```
+- The output executable will be placed in the `dist/` folder.
+
+## Requirements
+- **Python**: 3.7.9+
+- **OS**: Windows (primary), macOS/Linux (may need tweaks)
+- **Dependencies**: See `requirements.txt`
+
+---
+
+## Contributing
+
+Ideas for new features—especially for supporting other game launchers (e.g., Epic, GOG, Origin, etc.)—are welcome!
+
+### How to Contribute
+1. Fork this repo
+2. Create a feature branch: `git checkout -b feature-name`
+3. Make and test your changes
+4. Commit clearly: `git commit -m "Add feature description"`
+5. Push: `git push origin feature-name`
+6. Open a pull request
+
+### Guidelines
+- Follow PEP 8
+- Update docs as needed
+
+---
+
+## SteamDown v1.0.0 Release Notes
+
+### 🆕 What's New in v1.0.0
+- Initial public release
+- Modern GUI
+- Standalone Windows executable
+- Modular Python codebase
+
+### 🐞 Bugfixes
+- Title bar issues fixed
+- App icon to be added
+
+### 🔜 Upcoming
+- Light/system theme mode
+- Support for more launchers (ideas welcome!)
+
+---
+
+**Download:**  
+[SteamDown.exe](./SteamDown.exe)
+
+---
+
+## License
+
+MIT License – see [LICENSE](LICENSE) for details.
+
+## Issues & Support
+- Open an issue for bugs, suggestions, or questions
+- Please include:
+  - Description
+  - Steps to reproduce
+  - OS/Python version
+  - Screenshots if possible
+
+---
+
+**Note:** SteamDown is not affiliated with Valve or Steam. Steam is a trademark of Valve Corporation.
